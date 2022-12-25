@@ -1,22 +1,10 @@
 const express = require("express");
 const router = express.Router();
 
-const {
-  addPaciente,
-  getPacienteById,
-  getAll,
-  updateById,
-  deleteById,
-} = require("../controllers/routesControlers");
+// Import all routers here
+const pacientesRouter = require("./patients");
 
-router.post("/", addPaciente);
-
-router.get("/:id", getPacienteById);
-
-router.get("/", getAll);
-
-router.put("/:id", updateById);
-
-router.delete("/:id", deleteById);
+// Link all routers to the main router
+router.use("/pacientes", pacientesRouter);
 
 module.exports = router;
