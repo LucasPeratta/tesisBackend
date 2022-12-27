@@ -11,7 +11,19 @@ function createPatientTable(db) {
   });
 }
 
+function createProvidersTable(db) {
+  return db.schema.dropTableIfExists("providers").finally(() => {
+    return db.schema.createTable("providers", (table) => {
+      table.increments("id").primary();
+      table.string("name", 10);
+      table.string("phoneNumber", 20);
+      table.string("email", 20);
+    });
+  });
+}
+
 function init(db) {
+  createProvidersTable(db);
   createPatientTable(db);
 }
 
