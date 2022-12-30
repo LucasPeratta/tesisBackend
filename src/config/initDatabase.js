@@ -11,8 +11,20 @@ function createPatientTable(db) {
   });
 }
 
+function createAppointmentsTable(db) {
+  return db.schema.dropTableIfExists("appointmentss").finally(() => {
+    return db.schema.createTable("appointmentss", (table) => {
+      table.increments("id").primary();
+      table.ENUM("status");
+      table.string("date", 20);
+      table.time("time", 20);
+    });
+  });
+}
+
 function init(db) {
   createPatientTable(db);
+  createAppointmentsTable(db);
 }
 
 module.exports = init;
