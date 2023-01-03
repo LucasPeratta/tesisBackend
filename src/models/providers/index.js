@@ -18,6 +18,7 @@ const updateById = (id, provider) => {
       name: provider.name,
       phoneNumber: provider.phoneNumber,
       email: provider.email,
+      shifts: provider.shifts,
     })
     .from("providers")
     .where({ id: id });

@@ -8,7 +8,7 @@ const addProvider = (req, res) => {
       res.json({ msg: "provider added SUCCESSFULLY", id: id });
     })
     .catch((err) => {
-      res.json({ msg: "Error, can't add a provider ", error: err });
+      res.json({ msg: "Error, couldn't add a provider ", error: err });
     });
 };
 
@@ -21,7 +21,10 @@ const getProviderById = (req, res) => {
     })
     .catch((err) => {
       console.log(err);
-      res.json({ msg: "Error, can't get a provider", error: err });
+      res.json({
+        msg: "Error, couldn't retrieve provider with id ${id}",
+        error: err,
+      });
     });
 };
 
@@ -32,7 +35,7 @@ const getAll = (req, res) => {
       res.json({ providers: allproviders });
     })
     .catch((err) => {
-      res.json({ msg: "Error, can't get a providers", error: err });
+      res.json({ msg: " couldn't retrieve providers", error: err });
     });
 };
 
@@ -46,7 +49,7 @@ const updateProviderById = (req, res) => {
     })
     .catch((err) => {
       console.log(err);
-      res.json({ msg: "Error, cannot update a provider", error: err });
+      res.json({ msg: "Error, provider updated succesfully", error: err });
     });
 };
 
@@ -58,7 +61,7 @@ const deleteProviderById = (req, res) => {
       res.json({ msg: "provider removed successfully" });
     })
     .catch((err) => {
-      res.json({ msg: "Error, can't delete a provider" });
+      res.json({ msg: "Error, couldn't delete provider" });
     });
 };
 
