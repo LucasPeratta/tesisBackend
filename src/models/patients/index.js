@@ -1,23 +1,32 @@
 const db = require("../../db");
 
-const save = (paciente) => {
-  return db("pacientes").insert(paciente);
+const save = (patient) => {
+  return db("patients").insert(patient);
 };
 
 const getAll = () => {
-  return db("pacientes").select("*");
+  return db("patients").select("*");
 };
 
 const getById = (id) => {
-  return db.from("pacientes").where(id, id).select();
+  return db.select("*").from("patients").where({ id: id });
 };
 
-const updateById = (id, paciente) => {
-  return db.from("pacientes").where(id, id).update({ pacientes: paciente });
+const updateById = (id, patient) => {
+  return db
+    .update({
+      name: patient.name,
+      dni: patient.dni,
+      email: patient.email,
+      date: patient.date,
+      emr: patient.emr,
+    })
+    .from("patients")
+    .where({ id: id });
 };
 
 const deleteById = (id) => {
-  return db.from("pacientes").where(id, id).del();
+  return db.delete().from("patients").where({ id: id });
 };
 
 module.exports = { save, getAll, getById, updateById, deleteById };

@@ -2,9 +2,13 @@ const express = require("express");
 const router = express.Router();
 
 // Import all routers here
-const pacientesRouter = require("./patients");
+const patientsRouter = require("./patients");
+const providersRouter = require("./providers");
+const appointmentsRouter = require("./appointments");
 
 // Link all routers to the main router
-router.use("/pacientes", pacientesRouter);
+router.use("/patients", patientsRouter);
+router.use("/providers", providersRouter);
+router.use("./appointments", appointmentsRouter);
 
 module.exports = router;

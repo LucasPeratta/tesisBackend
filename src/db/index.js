@@ -8,5 +8,4 @@ const config = {
 
 const db = require("knex")(config);
 
-// Exports db
 module.exports = db;

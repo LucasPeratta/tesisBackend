@@ -5,35 +5,67 @@ const addPatient = (req, res) => {
   patients
     .save(data)
     .then((id) => {
-      res.json({ msg: "Paciente agregado con EXITO", id: id });
+      res.json({ msg: "Patient added SUCCESSFULLY", id: id });
     })
     .catch((err) => {
-      res.json({ msg: "Error al agregar paciente", err: err });
+      res.json({ msg: "Error, couldn't add a patient ", error: err });
     });
 };
 
-// Modify every function bellow to work properly
 const getPatientById = (req, res) => {
   const id = req.params.id;
-  patient = patients.getById(id);
-  res.json({ msg: patient });
+  patients
+    .getById(id)
+    .then((patient) => {
+      res.json({ data: patient });
+    })
+    .catch((err) => {
+      console.log(err);
+      res.json({
+        msg: "Error, couldn't retrieve patient with id ${id}",
+        error: err,
+      });
+    });
 };
 
 const getAll = (req, res) => {
-  res.json(patients.getAll());
+  patients
+    .getAll()
+    .then((allPatients) => {
+      res.json({ pacientes: allPatients });
+    })
+    .catch((err) => {
+      res.json({ msg: "Error, couldn't retrieve patients", error: err });
+    });
 };
 
 const updatePatientById = (req, res) => {
-  const id = req.paramas.id;
+  const id = req.params.id;
   const patient = req.body;
-  patients.updateById(id, patient);
-  res.send({ msg: "Paciente actualizado con EXITO" });
+  patients
+    .updateById(id, patient)
+    .then(() => {
+      res.json({ msg: "Patient updated succesfully" });
+    })
+    .catch((err) => {
+      console.log(err);
+      res.json({
+        msg: "Error, couldn't update patient with id ${id}",
+        error: err,
+      });
+    });
 };
 
 const deletePatientById = (req, res) => {
   const id = req.params.id;
-  patients.deleteById(id);
-  res.send({ msg: "Paciente Eliminado con exito" });
+  patients
+    .deleteById(id)
+    .then(() => {
+      res.json({ msg: "Patient removed successfully" });
+    })
+    .catch((err) => {
+      res.json({ msg: "Error, couldn't delete patient" });
+    });
 };
 
 module.exports = {
