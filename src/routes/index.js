@@ -9,6 +9,6 @@ const appointmentsRouter = require("./appointments");
 // Link all routers to the main router
 router.use("/patients", patientsRouter);
 router.use("/providers", providersRouter);
-router.use("./appointments", appointmentsRouter);
+router.use("/appointments", appointmentsRouter);
 
 module.exports = router;

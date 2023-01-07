@@ -8,6 +8,7 @@ const addAppointment = (req, res) => {
       res.json({ msg: "appointment added SUCCESSFULLY", id: id });
     })
     .catch((err) => {
+      console.log(err);
       res.json({ msg: "Error, couldn't add a appointment ", error: err });
     });
 };

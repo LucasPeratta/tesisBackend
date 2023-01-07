@@ -30,7 +30,6 @@ function createAppointmentsTable(db) {
       table.string("date", 10);
       table.string("time", 20);
       table.foreign("id").references("appointmentStatus");
-      //patientId => foreign key (relacion)
       table.foreign("id").references("patients");
       table.foreign("id").references("providers");
     });

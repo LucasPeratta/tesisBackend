@@ -20,7 +20,6 @@ const getPatientById = (req, res) => {
       res.json({ data: patient });
     })
     .catch((err) => {
-      console.log(err);
       res.json({
         msg: "Error, couldn't retrieve patient with id ${id}",
         error: err,
