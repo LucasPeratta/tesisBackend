@@ -2,6 +2,7 @@
   "dependencies": {
     "express": "^4.18.2",
     "express-router": "^0.0.1",
+    "firebase-admin": "^11.4.1",
     "knex": "^2.3.0",
     "nodemon": "^2.0.20",
     "sqlite3": "^5.1.4"
@@ -9,8 +10,8 @@
   "scripts": {
     "start": "nodemon app.js"
   },
-  "name": "c",
-  "description": "��#\u0000 \u0000t\u0000e\u0000s\u0000i\u0000s\u0000B\u0000a\u0000c\u0000k\u0000e\u0000n\u0000d\u0000\r\u0000 \u0000",
+  "name": "sos-backend",
+  "description": "SOS backend",
   "version": "1.0.0",
   "main": "server.js",
   "repository": {

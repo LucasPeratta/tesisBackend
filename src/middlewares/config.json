@@ -1,0 +1,12 @@
+{
+    "type": "service_account",
+    "project_id": "salud-online-solidaria",
+    "private_key_id": "5f39125fa8160914db176d6c96b13f0a29a65214",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCfH3jw9BbKvpFl\nMm9u8KuRbEVk3C9B95GbS5vgPuDZsOsqH4tkwtb9PJdaJFvFTyIjIWYKGyjQqVV0\nRe/3CX1OdfXhciOqlXWBDwqF4e4cH4wp/KApLt8Pv8NBTx2aNvUIHpXWqV3YYrgm\nyajwmCEgs5SWgeYc8URzyRz2wMBwBWp/hUX7TfjgjTMdoqW0jSskLj4wZezIUYDl\nF6EfvK/S4lvJyEYnmjwTlTCccVCCsuixRsDHMVq6RsjtaIxj3bKzyXdNf4SClR2o\nCM5Ta0xYoU2HY8xT3+E1vp30p51vOkfpyxrp4OfrpSPbLTnnjVTgI7DgYYBYGyMw\n07uYL1jJAgMBAAECggEAJBRyy8/MyzPiq9t/wNv5SwQNyAzU+lQ0Q84lDfez7Chd\najO026gCL3FpsBrGZDrJNsX/6RK3cniy06Z3/r+8FepRUkkbJTa2agkLDchowR+2\nHF8Xwb7K/Tsx/sD9qVYEwU6OExpcGRBpSQI4uDUGbe/KJUZW8wER0F8tnhWejMeS\nC7t1Rs2FoD61NlgIBqTYcdh7C5/J8X3MXSQ+Q/zmqDNmL2oZHm4qiLMpvW3jTqSK\nKzFx/bUF1qrLinWIcfrkJpyoIiG1IyxPmJ+DewNDQfr2skmdAINFD9zLn2wdRjhN\nijhxgfLTbN1aWVJuyIjbfzhnVFriLJC+f+c1Q7e1wQKBgQDO8nO9rxlj0988+1X2\nJT4+0JZ5xGle+NPgOa0jHOpSq1/WylGCsHukXiN8q6EyAYw5X5drcpUfRHdLnn+x\ntWd7MVMmKJvzKx4Q1t8RjWfawmuSjJcrFHXB2BTjKYzFK2M2KhrBH/TBCz+SK+WE\nkhG24u+qDlj1FdG2YnQghz53ZQKBgQDE1w0+HJwCLBi/IDX5P0n6MzB0wqBTWlk2\nFZh3HbX/Es0tOiuS3/GT8DHrVX8jLmSe7FM/2GIC4/yEupjeaTgGAafifuwgCeqi\nD0QgyXsIM8S05OFz7/Ty3XVvm+f6MoQ+bYOiCLGOCjYsNA5N/KoP06b+QzbOzNBv\ne4OxwYo/lQKBgBAcU+JadVGONvzaXDDTaWsedfh4z/Myz9vO4amwIJXa/ZUNHxdb\ngeSj54NXIS9xa2c0B+e3feB3Rgo/BpXhF3NBvcVkt+9QVgDdmXQWXBVtuU4pX8Nc\nzmYO2mFs5Kac4BZhZL/QKw+0Pni0riOJ85MXS60jfM1nq3HVbFDz9mr5AoGAYQ+Z\n3BLHatrLqRL9ClaG5/Tt4+VEoVVfwCeN8s6Xu5tNyQtyCQ6cVNKQCvcxpetuel8V\n/dl5GuvIzLomPyWrFmsimbD0RigdpqPYeEJhhH3idUCXW0/rfQZurgY2sUzPoOjn\ni7K1utCWPd29X/9C7GL1aVNDZ13fOdmx6qkAvrECgYA4LNw4XntKFmcqc1HPmT0y\nydBa/sh/lKymEjZ6ryS6PgnnYFhXP6RGPcyaV4iHYa9GU440tbh9CbN6gYdY90uZ\nsRXbeN6nxOIGP2uZSGLkOuq+L88DrnuzQh3Uo5OW5dpz0EzCaxVUk9Lox9QHMmiV\nzUxeRfGWS0y0rbQ96WeElw==\n-----END PRIVATE KEY-----\n",
+    "client_email": "firebase-adminsdk-5ap8x@salud-online-solidaria.iam.gserviceaccount.com",
+    "client_id": "118364558016965747637",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-5ap8x%40salud-online-solidaria.iam.gserviceaccount.com"
+}
